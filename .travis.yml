@@ -3,6 +3,11 @@ rvm:
   - 2.1.8
   - 2.2.4
   - 2.3.0
+  - 2.4.0
+  - 2.5.0
+  - 2.6.0
+  - 2.7.0
+  - 3.0.0
   - ruby-head
   - rbx-19mode
 
@@ -13,6 +18,10 @@ env:
   - RAILS_VERSION="~> 4.1.0"
   - RAILS_VERSION="~> 4.2.0"
   - RAILS_VERSION="~> 5.0.0"
+  - RAILS_VERSION="~> 5.1.0"
+  - RAILS_VERSION="~> 5.2.0"
+  - RAILS_VERSION="~> 6.0.0"
+  - RAILS_VERSION="~> 6.1.0"
   # Do we need to test each rspec version with each rails?
   # Since rspec has no direct relation to rails (except through rspec-rails,
   # which isn't considered here), I'm assuming no.
@@ -31,7 +40,43 @@ matrix:
       env: RAILS_VERSION="~> 3.1.0"
     - rvm: 2.3.0
       env: RAILS_VERSION="~> 3.2.0"
+    - rvm: 2.4.0
+      env: RAILS_VERSION="~> 3.1.0"
+    - rvm: 2.4.0
+      env: RAILS_VERSION="~> 3.2.0"
+    - rvm: 2.5.0
+      env: RAILS_VERSION="~> 3.1.0"
+    - rvm: 2.5.0
+      env: RAILS_VERSION="~> 3.2.0"
+    - rvm: 2.6.0
+      env: RAILS_VERSION="~> 3.1.0"
+    - rvm: 2.6.0
+      env: RAILS_VERSION="~> 3.2.0"
+    - rvm: 2.7.0
+      env: RAILS_VERSION="~> 3.1.0"
+    - rvm: 2.7.0
+      env: RAILS_VERSION="~> 3.2.0"
+    - rvm: 3.0.0
+      env: RAILS_VERSION="~> 3.1.0"
+    - rvm: 3.0.0
+      env: RAILS_VERSION="~> 3.2.0"
     - rvm: 2.0.0
       env: RAILS_VERSION="~> 5.0.0"
+    - rvm: 2.0.0
+      env: RAILS_VERSION="~> 5.1.0"
+    - rvm: 2.0.0
+      env: RAILS_VERSION="~> 5.2.0"
+    - rvm: 2.0.0
+      env: RAILS_VERSION="~> 6.0.0"
+    - rvm: 2.0.0
+      env: RAILS_VERSION="~> 6.1.0"
     - rvm: 2.1.8
       env: RAILS_VERSION="~> 5.0.0"
+    - rvm: 2.1.8
+      env: RAILS_VERSION="~> 5.1.0"
+    - rvm: 2.1.8
+      env: RAILS_VERSION="~> 5.2.0"
+    - rvm: 2.1.8
+      env: RAILS_VERSION="~> 6.0.0"
+    - rvm: 2.1.8
+      env: RAILS_VERSION="~> 6.1.0"
