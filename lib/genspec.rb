@@ -2,7 +2,7 @@ require 'thor'
 if defined?(Rails) && defined?(Rails::VERSION)
   if Rails::VERSION::MAJOR == 2
     raise "Use genspec 0.1.x for Rails 2; this version is for Rails 3."
-  elsif [3, 4, 5, 6].include? Rails::VERSION::MAJOR
+  elsif [3, 4, 5, 6, 7].include? Rails::VERSION::MAJOR
     require 'rails/generators'
   else
     raise "Unsupported Rails version: #{Rails::VERSION::STRING}"
