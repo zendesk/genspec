@@ -21,7 +21,7 @@ module GenSpec
       def matches?(generator)
         @described = generator[:described]
         base = nil
-        base, @described = @described.split(/:/) if @described =~ /:/
+        base, @described = @described.split(/:/) if @described.is_a?(String) && @described =~ /:/
         @args = generator[:args]
         @generator_options = generator[:generator_options]
         @shell = GenSpec::Shell.new(generator[:output] || "", generator[:input] || "")
